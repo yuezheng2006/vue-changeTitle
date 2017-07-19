@@ -9,7 +9,7 @@ const setWechatTitle = (title, img) => {
     var iframe = document.createElement('iframe')
     iframe.style.display = 'none'
     // 替换成站标favicon路径或者任意存在的较小的图片即可
-    iframe.setAttribute('src', img || '/spa/favicon.ico')
+    iframe.setAttribute('src', img || '/favicon.ico')
     var iframeCallback = function () {
       setTimeout(function () {
         iframe.removeEventListener('load', iframeCallback)
